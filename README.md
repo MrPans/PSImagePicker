@@ -10,16 +10,18 @@ A convenience image picker. Pick ONE image from camera or PhotoLibrary fast and 
 #####`Recommend` Import with cocoapods
 Add follow line in your podfile.
 
-    pod 'PSImagePicker'  
-      
+```ruby
+pod 'PSImagePicker'  
+```   
 #####Import manually
 Download zip and unarchiver.Drag 'PSImagePicker' folder into your project.
 
 
 ### Usage
 **Make a lazy initlazer and set delegate.**
+
  
- ```
+ ```objective-c
  @property (nonatomic, strong) PSImagePicker *imagePicker;
 
  
@@ -33,9 +35,10 @@ Download zip and unarchiver.Drag 'PSImagePicker' folder into your project.
     return _imagePicker;
 }
  ```
+ 
 **Show options.**
 
-```
+```objective-c
 - (void)touchAvatarButton:(UIButton *)sender
 {
     [self.imagePicker showOptions];
@@ -45,7 +48,8 @@ Download zip and unarchiver.Drag 'PSImagePicker' folder into your project.
 
 **Do anything you want with picked image.**
 
-```
+```objective-c
+
 #pragma mark -PSImagePickerDelegate
 
 - (void)didFinishPickingImage:(UIImage *)image
@@ -78,8 +82,10 @@ For more，download and see in demo。
 #####`推荐` 通过Cocoapods导入
 在你的Podfile文件中加入如下一行
 
-    pod 'PSImagePicker'
-    
+```ruby
+pod 'PSImagePicker'
+```
+
 #####手动导入
 下载zip并解压。将PSImagePicker文件夹拖入你的Xcode工程中。
 
@@ -87,7 +93,7 @@ For more，download and see in demo。
 ### 使用方法
 **推荐使用懒加载初始化，并设置代理.**
  
- ```
+```objective-c
  @property (nonatomic, strong) PSImagePicker *imagePicker;
 
  
@@ -103,7 +109,7 @@ For more，download and see in demo。
  ```
 **一句话拉起imagePicker.**
 
-```
+```objective-c
 - (void)touchAvatarButton:(UIButton *)sender
 {
     [self.imagePicker showOptions];
@@ -113,7 +119,7 @@ For more，download and see in demo。
 
 **代理中返回一张图片.**
 
-```
+```objective-c
 #pragma mark -PSImagePickerDelegate
 
 - (void)didFinishPickingImage:(UIImage *)image
