@@ -10,8 +10,8 @@ A convenience image picker. Pick ONE image from camera or PhotoLibrary fast and 
 #####`Recommend` Import with cocoapods
 Add follow line in your podfile.
 
-    pod PSImagePicker
-    
+    pod 'PSImagePicker'  
+      
 #####Import manually
 Download zip and unarchiver.Drag 'PSImagePicker' folder into your project.
 
@@ -78,7 +78,7 @@ For more，download and see in demo。
 #####`推荐` 通过Cocoapods导入
 在你的Podfile文件中加入如下一行
 
-    pod PSImagePicker
+    pod 'PSImagePicker'
     
 #####手动导入
 下载zip并解压。将PSImagePicker文件夹拖入你的Xcode工程中。
