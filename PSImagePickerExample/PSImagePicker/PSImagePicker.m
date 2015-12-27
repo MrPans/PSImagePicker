@@ -28,7 +28,7 @@ NSTimeInterval const DismissAnimationInterval = 0.5;
     self = [super init];
     if (self)
     {
-        NSAssert(viewController, @"Please use NS_DESIGNATED_INITIALIZER--initWithViewController: and the viewController can not be nil");
+        NSAssert(viewController, @"Please use DESIGNATED INITIALIZER--initWithViewController: \n also the viewController can not be nil");
         _presentingController = viewController;
     }
     return self;
@@ -98,7 +98,7 @@ NSTimeInterval const DismissAnimationInterval = 0.5;
 -(void)pickImageWithCamera
 {
 #if TARGET_IPHONE_SIMULATOR
-    NSAssert(TARGET_IPHONE_SIMULATOR, @"Can not pick image with camera on simulator.Please use it on iOS device");
+
 #else
     [self pickImageFromSource:UIImagePickerControllerSourceTypeCamera];
 #endif
