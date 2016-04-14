@@ -1,4 +1,9 @@
 # PSImagePicker (中文在后)
+
+[![Pod Version](https://img.shields.io/cocoapods/v/PSImagePicker.svg?style=flat)](http://cocoapods.org/pods/PSImagePicker)
+[![License](https://img.shields.io/cocoapods/l/PSImagePicker.svg?style=flat)](http://cocoapods.org/pods/PSImagePicker) 
+[![Platform](https://img.shields.io/cocoapods/p/PSImagePicker.svg?style=flat)](http://cocoapods.org/pods/PSImagePicker)
+
 A convenience image picker. Pick ONE image from camera or PhotoLibrary fast and make your ViewController code clean.
 
 
