@@ -11,6 +11,8 @@
 
 @protocol PSImagePickerDelegate <NSObject>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  *  选取好照片了
  *
@@ -22,7 +24,7 @@
 
 @interface PSImagePicker : NSObject
 
-@property (weak, nonatomic) id<PSImagePickerDelegate> delegate;
+@property (weak, nonatomic, nullable) id<PSImagePickerDelegate> delegate;
 
 - (instancetype)initWithViewController:(UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
 
@@ -30,5 +32,7 @@
  *  弹出选择菜单，目前只支持 拍照 / 相册
  */
 - (void)showOptions;
+
+NS_ASSUME_NONNULL_END
 
 @end
